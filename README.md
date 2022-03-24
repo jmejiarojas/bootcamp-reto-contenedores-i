@@ -9,7 +9,7 @@ docker run -d --name my-bd-reto jmejiarojas/bd-mysql
 ## Crear contenedor para el api Personas
 
 `
-docker run -d --name api-persona -p 1603:8080 --link bd-mysql:mysql_server  jmejiarojas/api-persona-ret
+docker run -d --name api-persona -p 1603:8080 --link bd-mysql:mysql_server  jmejiarojas/api-persona-reto
 `
 
 Nota: Aplicamos `link` para comunicar ambos contenedores, "mysql_server" es el host que espera el api_persona, con el comando link es `<nombre-container>:<nombre-host-api>`
